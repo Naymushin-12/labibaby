@@ -51,7 +51,7 @@ int main()
         int stroka, stolbik;
         cout«"Введите номер строки и столбца(цифра от 0 до 2):"«endl;
         cin » stroka » stolbik;
-        if (stroka < 0  stroka >= SIZE  stolbik < 0  stolbik >= SIZE  board[stroka][stolbik] != ' ')
+        if (stroka < 0 || stroka >= SIZE || stolbik < 0 || stolbik >= SIZE || board[stroka][stolbik] != ' ')
         {
             cout «"Такого хода быть не может. Начните ещё раз"«endl;
             continue;
